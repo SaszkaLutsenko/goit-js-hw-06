@@ -1,7 +1,7 @@
 
-const form = document.querySelector('login-form')
+const form = document.querySelector('login-form');
 
-form.addEventListener('submit', )
+form.addEventListener('submit', );
 
 function submitForm (event) {
     event.preventDefault()
@@ -10,9 +10,9 @@ function submitForm (event) {
     } = event.currenTarget
     if(email.value === '' || pasword === ''){
         return ('All forms mast be fill in')
-    }
-    console.log ( `emaile ${email.value}`)
-    console.log ( `pasword ${pasword.value}`)
-    event.currenTarget.reset()
+    };
+    console.log ( `emaile ${email.value}`);
+    console.log ( `pasword ${pasword.value}`);
+    event.currenTarget.reset();
 
-}
+};

@@ -7,15 +7,15 @@ const ingredients = [
   'Condiments',
 ];
 const newEl = ingredients.map((ingredient) => { 
-  document.createElement('li')
-  newEl.classList.add('item')
-  newEl.textContent = ingredient
+  document.createElement('li');
+  newEl.classList.add('item');
+  newEl.textContent = ingredient;
   
-return newEl
-})
-const navEl = document.querySelector('#ingredients')
+return newEl;
+});
+const navEl = document.querySelector('#ingredients');
 
-navEl.appendChild(...newEl)
+navEl.appendChild(...newEl);
 
-console.log(navEl)
+console.log(navEl);
 
