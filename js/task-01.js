@@ -10,4 +10,3 @@ const aboutItemEl = itemEl.forEach((about) => {
 
 
 
-

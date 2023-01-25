@@ -1,15 +1,16 @@
 const inputColorEl = document.querySelector('#validation-input');
-const inputLangth = inputColorEl.dataset.langth;
 
-inputColorEl.addEventListener('blur', onInputColoeElLangth);
+console.log(inputColorEl.getAttribute('data-length'))
 
-function onInputColoeElLangth (event){
-    if (event.currentTargetvalue.langth === inputLangth){
-        inputColorEl.classList.remove('invalid' );
+inputColorEl.addEventListener('blur', e => {
+
+    if (e.target.value.langth === inputColorEl.getAnimations('data-length')){
         inputColorEl.classList.add('valid' );
     }  else {
-        inputColorEl.classList.remove('valid' );
-        inputColorEl.classList.add('invalid' );
+        inputColorEl.classList.contains('valid' );
+        inputColorEl.classList.remove('invalid' );
     }
-    
-};
+    inputColorEl.classList.add('invalid')
+});
+
+

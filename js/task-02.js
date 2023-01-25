@@ -6,16 +6,21 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-const newEl = ingredients.map((ingredient) => { 
-  document.createElement('li');
-  newEl.classList.add('item');
-  newEl.textContent = ingredient;
-  
-return newEl;
-});
-const navEl = document.querySelector('#ingredients');
 
-navEl.appendChild(...newEl);
 
-console.log(navEl);
+
+
+const navigationEl = document.querySelector('#ingredients');
+const markup = []
+
+ingredients.forEach(ingredient => {
+	const item = document.createElement('li')
+	item.className = 'item'
+	item.textContent = ingredient
+	markup.push(item)
+})
+
+navigationEl.append(...markup)
+
+
 
