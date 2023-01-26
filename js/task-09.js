@@ -1,5 +1,5 @@
 
-  const colorBtn = document.querySelector('change-color')
+  const colorBtn = document.querySelector('.change-color')
   const bodyEl = document.querySelector('body')
   const colorName = document.querySelector('.color')
 

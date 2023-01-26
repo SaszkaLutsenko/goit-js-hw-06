@@ -7,13 +7,13 @@ const span = document.querySelector('#value');
 
 
 decrementBtn.addEventListener('click', () => {
-    counterValue -=
+    counterValue -= 1
     span.textContent = counterValue
 })
 
 
 incrementBtn.addEventListener('click', () => {
-    counterValue +=
+    counterValue += 1
     span.textContent = counterValue
 })
 

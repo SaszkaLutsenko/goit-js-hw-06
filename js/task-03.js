@@ -15,7 +15,7 @@ const images = [
 
 
 const galleryImege = document.querySelector('.gallery');
-const markup = image
+const markup = images
 .map((imege) => `<li class="gallery__item"><img src="${imege.url}" width = '400' alt="${imege.alt}"></li>`)
 .join('');
 console.log(markup)
