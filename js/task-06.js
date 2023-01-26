@@ -1,16 +1,14 @@
-const textInput = document.querySelector('#validation-input')
-console.log(textInput.getAttribute('data-length'))
-textInput.addEventListener('blur', event => {
-	if (event.target.value.length == textInput.getAttribute('data-length')) {
-		textInput.classList.add('#validation-input.valid')
-		if (textInput.classList.contains('#validation-input.invalid')) {
-			textInput.classList.remove('#validation-input.invalid')
-		}
-	} else {
-		if (textInput.classList.contains('#validation-input.valid')) {
-			textInput.classList.remove('#validation-input.valid')
-		}
-		textInput.classList.add('#validation-input.invalid')
-	}
-})
+const inputColorEl = document.querySelector('#validation-input');
+
+const dataLength = Number(inputColorEl.dataset.length)
+
+function onFormText (e){
+    if(e.currentTarget.value.trim().length === dataLength){
+		inputColorEl.classList.remove('invalid')
+        inputColorEl.classList.add('valid')
+    } else {
+        inputColorEl.classList.remove('valid')
+        inputColorEl.classList.add('invalid')
+    }
+}
 
