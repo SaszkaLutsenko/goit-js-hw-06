@@ -12,7 +12,7 @@ function submitForm (e) {
         return ('Please fill in all the fields!')
     };
   
-    const userInformation = { email: email.value, Password: password.value }
+    const userInformation = { email: email.value, Password: pasword.value }
     console.log (userInformation)
     e.currenTarget.reset();
    
