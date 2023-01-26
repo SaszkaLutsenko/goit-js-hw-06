@@ -6,7 +6,7 @@ form.addEventListener('submit', submitForm);
 function submitForm (e) {
     e.preventDefault()
     const {
-        elements: {email, pasword },
+        elements:{email, pasword },
     } = e.currenTarget
     if(email.value === '' || pasword.value === ''){
         return ('Please fill in all the fields!')
