@@ -8,7 +8,7 @@ function submitForm (e) {
     const {
         elements:{email, password },
     } = e.currenTarget
-    if(email.value === '' || pasword.value === ''){
+    if(email.value === '' || password.value === ''){
         return ('Please fill in all the fields!')
     };
   
