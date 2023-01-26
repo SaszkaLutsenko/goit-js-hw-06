@@ -1,16 +1,13 @@
 const inputColorEl = document.querySelector('#validation-input');
 
-console.log(inputColorEl.getAttribute('data-length'))
+const dataLength = Number(inputColorEl.dataset.length)
 
-inputColorEl.addEventListener('blur', e => {
-
-    if (e.target.value.langth === inputColorEl.getAttribute('data-length')){
-        inputColorEl.classList.add('.valid' );
-    }  else {
-        inputColorEl.classList.contains('.valid' );
-        inputColorEl.classList.remove('.invalid' );
+function onFormText (e){
+    if(e.currentTarget.value.trim().length === dataLength){
+        inputColorEl.classList.add('#validation-input.valid')
+    } else {
+        inputColorEl.classList.remove('#validation-input.valid')
+        inputColorEl.classList.add('#validation-input.invalid')
     }
-    inputColorEl.classList.add('.invalid')
-});
-
+}
 
